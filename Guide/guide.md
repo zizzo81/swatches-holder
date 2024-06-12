@@ -4,7 +4,7 @@ This is an [OpenSCAD](https://openscad.org/) script to generate filament and inf
 
 This script has been published and can be found and used directly on [MakerWorld](https://makerworld.com/en)'s [page](https://makerworld.com/en/models/488028).
 
-[![Download this guide as PDF](./Guide/download_pdf.png)](./Guide to swatches holder generator.pdf)[![Published on MakerWorld](./Guide/maker_world.png)](https://makerworld.com/en/models/488028)
+[![Published on MakerWorld](./maker_world.png)](https://makerworld.com/en/models/488028)
 
 ## Summary
 
@@ -124,30 +124,30 @@ Bottom side has the same configuration as top side, only parameters that change 
 
 The easiest one, nothing to say: create a holder the way you want it.
 
-![Parametric Model Maker](./Guide/mono_online_editor.png)An example holder to be printed using a single color.
+![Parametric Model Maker](./mono_online_editor.png)An example holder to be printed using a single color.
 
-![print_mode set to Monochromatic](./Guide/print_mode_monochromatic.png)
+![print_mode set to Monochromatic](./print_mode_monochromatic.png)
 
 Make sure you selected **Monochromatic** for the parameter **print_mode** in the **3D printing settings** tab as shown in the image above.
 
-Remember to left click on ![Generate](./Guide/generate_button.png) to generate a version with your current settings.
+Remember to left click on ![Generate](./generate_button.png) to generate a version with your current settings.
 
-Click on the ![Download](./Guide/download_button.png) button to download the object to a file.
+Click on the ![Download](./download_button.png) button to download the object to a file.
 
-![Download format selection](./Guide/format_selection.png)
+![Download format selection](./format_selection.png)
 
-When this windows pops up, left click on the ![Download STL](./Guide/download_stl_button.png) button to select the .STL file format.
+When this windows pops up, left click on the ![Download STL](./download_stl_button.png) button to select the .STL file format.
 
-![Save as monochromatic.stl](./Guide/mono_save_as.png)
+![Save as monochromatic.stl](./mono_save_as.png)
 
 If your computer offers the possibility to save the file to a desired location, select a folder where you want to save it and choose a proper name, e. g. “monochromatic”, which fill create “monochromatic.stl”.
 
 If your browser is configured to automatically save files, you will find the file named “Swatches holder.stl” in the location you usually receive downloaded file, usually called the “Downloads” folder.
 
-![Drrag'n'drop monochromatic.stl over Bambu Studio](./Guide/mono_dragndrop.png)
+![Drrag'n'drop monochromatic.stl over Bambu Studio](./mono_dragndrop.png)
 Open [Bambu Studio](https://bambulab.com/en/download/studio) or your preferred slicer, start a new project and drag the file onto it.
 
-![Example of a printed monochromatic holder](./Guide/mono_holder.jpg)
+![Example of a printed monochromatic holder](./mono_holder.jpg)
 
 Sample result of the above operations.
 
@@ -157,36 +157,36 @@ Please read the *Monochromatic holders* section for basic information about how 
 
 A limitation of the monochromatic printer can be partially bypassed, printing the texts with another color by using some clever tricks, here's how to do it.
 
-![Parametric Model maker](./Guide/color_editor.png)
+![Parametric Model maker](./color_editor.png)
 First of all make sure you designed your holder with all the texts as extruded, chiseled texts will not be colored.
 
 Export it as STL and import into Bambu Studio following the same instructions for monochromatic printing until you reach the step where you slice it.
 
-![Bambu Studio slice preview](./Guide/bambu_studio_color_preview_0.png)
+![Bambu Studio slice preview](./bambu_studio_color_preview_0.png)
 Once you sliced the plate, use drag the **+** icon of the vertical scrollbar down.
 
-![The + icon in the vertical scrollbar](./Guide/bambu_studio_vertical_scrollbar_20.png)
+![The + icon in the vertical scrollbar](./bambu_studio_vertical_scrollbar_20.png)
 
 As you scroll top layers will disappear from view, continue scrolling down until only one layer with texts is visible.
 
-![Bambu Studio slice preview at layer 19](./Guide/bambu_studio_color_preview_1.png)
+![Bambu Studio slice preview at layer 19](./bambu_studio_color_preview_1.png)
 Now, right click on the **+** icon and a menu will pop out.
 
-![Popup menu on vertical scrollbar](./Guide/bambu_studio_vertical_scrollbar_19.png)
+![Popup menu on vertical scrollbar](./bambu_studio_vertical_scrollbar_19.png)
 
 Select the **Add Pause** item, the you will have to slice the plate again.
 
-![Bambu Studio slice preview with pause at layer](./Guide/bambu_studio_color_preview_2.png)
+![Bambu Studio slice preview with pause at layer](./bambu_studio_color_preview_2.png)
 
 Once you sliced it again, the scrollbar will show a “Pause” label where you set it and the layer will be drawn with another color.
 
 Now print this, when the printer is starting to print that layer, it will pause and the print head will be moved away from the piece and on the screen you will see a message.
 
-![Display of Bambu Lab X1C showing Pause at layer alert](./Guide/pause_at_layer.jpg)
+![Display of Bambu Lab X1C showing Pause at layer alert](./pause_at_layer.jpg)
 
 Change the filament in the printer, then press **Resume** to continue printing using the new color.
 
-![Example of a printed holder with two colors](./Guide/color_holder.jpg)
+![Example of a printed holder with two colors](./color_holder.jpg)
 
 In my opinion, results are beautiful.
 
@@ -198,29 +198,29 @@ Please read the *Monochromatic holders* section for basic information about how 
 
 The most easy way to print these, yet the most satisfying way to customize this.
 
-![print_mode set to Holder only](./Guide/print_mode_holder_only.png)
+![print_mode set to Holder only](./print_mode_holder_only.png)
 
 
 Once you draw your holder, be sure to select the **Holder only** option for the **print_mode** parameter in the **3D printing settings** tab and click on **Generate**.
 
-![Parametric Model Maker](./Guide/holder_only_editor.png)
+![Parametric Model Maker](./holder_only_editor.png)
 Click the **Download** button to export to a STL file, let's say holder.stl.
 
-![print_mode set to Texts only](./Guide/print_mode_texts_only.png)
+![print_mode set to Texts only](./print_mode_texts_only.png)
 
 Change the **print_mode** parameter to **Texts only** and click **Generate** button again.
 
-![Parametric Model Maker](./Guide/texts_only_editor.png)
+![Parametric Model Maker](./texts_only_editor.png)
 Click **Download** again and export this to a STL file and call it texts.stl.
 
-![Drag'n'drop both files into Bambu Studio](./Guide/multicolor_dragndrop.png)
+![Drag'n'drop both files into Bambu Studio](./multicolor_dragndrop.png)
 Open a new project in Bambu Studio and drag both file at the same time on it.
 
-![Load these files as a single object with multiple parts? - Yes](./Guide/load_as_single_object.png)
+![Load these files as a single object with multiple parts? - Yes](./load_as_single_object.png)
 
 When asked if these has to be considered two parts of a single object, select **Yes**.
 
-![Bambu Studio change colors](./Guide/bambu_studio_multicolor.png)
+![Bambu Studio change colors](./bambu_studio_multicolor.png)
 Now follow these steps:
 
 1. Switch to the **Objects** tab by left clicking on the Global/Objects switch;
